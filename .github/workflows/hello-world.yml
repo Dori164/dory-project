@@ -7,7 +7,13 @@ on:
 jobs:
   hello:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Say Hello
         run: echo "Hello world!"
+
+      - name: Kernel
+        run: uname -a
+
+      - name: Git
+        run: git --version
