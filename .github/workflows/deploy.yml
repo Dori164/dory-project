@@ -1,6 +1,6 @@
 name: Deploy
 
-on: 
+on:
   push:
     branches: [main]
 
@@ -23,3 +23,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
           server-dir: /
+      
